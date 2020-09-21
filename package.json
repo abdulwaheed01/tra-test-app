@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@types/cors": "^2.8.7",
-    "@ty,pes/mongoose": "^5.7.36"
+    "@types/mongoose": "^5.7.36"
   },
 
   "engines": {
