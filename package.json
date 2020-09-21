@@ -6,7 +6,7 @@
   "scripts": {
     "tsc": "tsc",
     "test": "ts-node ./lib/server.ts",
-    "dev": "tsc && nodemon ./dist/server.js",
+    "start": "tsc && nodemon ./dist/server.js",
     "prod": "tsc && nodemon ./dist/server.js"
   },
   "author": "",
@@ -22,6 +22,11 @@
   },
   "devDependencies": {
     "@types/cors": "^2.8.7",
-    "@types/mongoose": "^5.7.36"
+    "@ty,pes/mongoose": "^5.7.36"
+  },
+
+  "engines": {
+    "node": "12.5.0",
+    "npm":"6.9.0"
   }
 }
