@@ -9,7 +9,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse,HttpParams } from '@angular/
 
 export class ApiService {
   
-  baseUri:string = 'http://localhost:4000';
+  baseUri:string = 'https://tra-test-api.herokuapp.com';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   constructor(private http: HttpClient) { }
