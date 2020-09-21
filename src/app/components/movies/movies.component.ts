@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from './../../service/api.service';
 // import {searchMoviePipe} from './searchMoviePipe';
-
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
@@ -22,6 +21,7 @@ export class MoviesComponent implements OnInit {
   getMovies(){
     this.apiService.getMovies(this.searchData).subscribe((data) => {
      this.Movies = data;
+     this.searchData = '';
     })    
   }
 

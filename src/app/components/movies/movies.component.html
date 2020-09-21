@@ -1,10 +1,12 @@
 <div class='container'>
     <div class="search-container">
-        <h3>Search
-            <input id="searchField" type="text"  [(ngModel)]="searchData" (ngModelChange)="getMovies()" placeholder="Movie name, genre, released year" />
+        <h3>
+            <input id="searchField" type="text" [(ngModel)]="searchData" placeholder="Movie name, genre, released year" />
+            <!-- <button class="button">Search</button> -->
+            <button mat-raised-button  (click)="getMovies()">Search</button>
         </h3>
     </div>
-<div *ngFor="let movie of Movies">
+<div *ngFor="let movie of Movies | search : searchData ">
     <div id="card-container">
         <mat-card class="card-1">
             <img mat-card-image
@@ -12,10 +14,8 @@
                 alt="Image Not Found">
             <div class='movie-data'>
                 <h3 class ="mat-card-movieTitle" >{{movie.title}}</h3>
-                <div class="movie-footer">
-                    <h1 class ="mat-card-genres" >{{movie.genres | noComma}}</h1>
-                    <h1 class ="mat-card-releaseData" >Released: {{movie.released | date : "mediumDate"}} </h1>
-                </div>
+                <span class ="mat-card-genres" >{{movie.genres | noComma}}</span>
+                <span class ="mat-card-releaseData" >Released: {{movie.released | date : "mediumDate"}} </span>
             </div>
         </mat-card>
         <mat-card class="card-2">
