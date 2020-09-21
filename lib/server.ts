@@ -33,7 +33,7 @@ const db: string = "mongodb+srv://demo1:demo_tra@cluster0-7mvod.mongodb.net/samp
 connect(db);
 
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
    console.log('Express server listening on port ' + PORT);
 })
 
