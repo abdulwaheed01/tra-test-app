@@ -47,7 +47,7 @@ app_1.default.use(cors_1.default(options));
 var PORT = 4000;
 var db = "mongodb+srv://demo1:demo_tra@cluster0-7mvod.mongodb.net/sample_mflix?retryWrites=true&w=majority";
 connect_1.default(db);
-app_1.default.listen(PORT, function () {
+app_1.default.listen(process.env.PORT || PORT, function () {
     console.log('Express server listening on port ' + PORT);
 });
 app_1.default.get('/', function (req, res) {
