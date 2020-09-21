@@ -9,7 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { NoCommaPipe } from './components/movies/NoCommaPipe';
-import { SearchPipe } from './components/movies/searchPipe';
+import { SearchPipe } from './components/movies/SearchPipe';
 import { FormsModule } from '@angular/forms';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { LoaderService } from './service/loader.service';
