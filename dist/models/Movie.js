@@ -21,8 +21,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var mongoose_1 = __importStar(require("mongoose"));
 var MovieSchema = new mongoose_1.Schema({
-    title: { type: String, required: true },
-    author: { type: String, required: true }
+    title: { type: String, required: true }
 });
 var Movie = mongoose_1.default.model("Movie", MovieSchema);
 exports.default = Movie;

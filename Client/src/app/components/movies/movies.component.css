@@ -1,0 +1,84 @@
+.search-container {
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 21px;
+    margin-bottom:21px
+}
+
+  .mat-card-image {
+      width: 100px;
+      height: 140px;
+      padding-top: 10px;
+      border-radius: 0%;
+      float: left;
+      margin: 0 auto;
+  }
+
+  .mat-card-genres {
+      background-color: #E0DEDD;
+      padding: 6px 14px 6px 14px;
+      border-radius: 3px;
+      display: inline;
+      font-size: 14px;
+  }
+
+  .mat-card-movieTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .movie-data {
+    margin-left:124px
+  }
+
+  .mat-card-releaseData {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    font-size: 18px;
+  }
+
+  .mat-card-imdb {
+      margin: 0 auto;
+      margin-top: 50px;
+      font-size: 18px;
+  }
+
+  .movie-footer{
+      /* display: inline; */
+      margin-top: 66px;
+  }
+
+
+.card-1 {
+     width: 70%;
+     margin-right: 2px;
+     background-color: white;
+     color:black;
+}
+
+.card-2 {
+    width: 13%;
+    background-color: white;
+    color:black;
+    text-align: center;
+    padding-top: 60px
+}
+
+#card-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  margin-left: 130px;
+  margin-bottom: 30px;
+}
+
+#searchField {
+  border: none;
+  margin-left: 7px;
+  border-radius: 11px;
+  padding: 2px 0 0px 12px;
+  height: 25px;
+  width: 290px;
+}
