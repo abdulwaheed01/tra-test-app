@@ -1,0 +1,24 @@
+version: '3' # specify docker-compose version
+ 
+# Define the services/containers to be run
+services:
+ client:
+   build: ./Client/tra-test-app
+   ports:
+     - "80:4200"
+ server: # name of the first service
+   build: ./Server # specify the directory of the Dockerfile
+   ports:
+     - "4000:4000"
+   environment:
+     - MONGO_URL=mongodb+srv://demo1:demo_tra@cluster0-7mvod.mongodb.net/sample_mflix?retryWrites=true&w=majority
+   links:
+     - database
+   depends_on:
+     - database
+ database: # name of the third service
+   image: mongo # specify image to build container from
+   volumes:
+     - "/data/db:/data/db"
+   ports:
+     - "27017:27017" # specify port forewarding
