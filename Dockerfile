@@ -30,6 +30,6 @@ COPY --chown=node:node . .
  
 #COPY --from=builder /usr/src/app .
  
-EXPOSE 4000
+EXPOSE 4200
  
-CMD [ "node", "./dist/server.js" ]
+CMD [ "npm", "start" ]
